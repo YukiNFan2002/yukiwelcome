@@ -1,0 +1,9 @@
+#!/bin/sh
+
+directory="ADD YOUR OWN PATH HERE!!!!!!!!!!!!!!!!!!!!!"
+# ^^^^^^^^^^^^^^^^ add path up there ^^^^^^^^^^^^^^^^^^^^
+
+gif_file=$(find "$directory" -type f -name "*.gif" | shuf -n 1)
+
+sxiv -b -a -sf "$gif_file"
+
